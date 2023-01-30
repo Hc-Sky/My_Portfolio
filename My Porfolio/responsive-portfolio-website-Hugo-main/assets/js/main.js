@@ -52,21 +52,22 @@ skillsHeader.forEach((el) =>{
 const tabs = document.querySelectorAll('[data-target]'),
     tabsContents = document.querySelectorAll('[data-content]')
 
-tabs.forEach(tab =>{
-    tab.addEventListener('click',() =>{
-        const target = document.querySelector(tab.dataset.target)
+tabs.forEach(tabElement =>{
+    tabElement.addEventListener('click',() =>{
+        const target = document.querySelector(tabElement.dataset.target)
 
         tabsContents.forEach(tabContent =>{
             tabContent.classList.remove('qualification__active')
         })
         target.classList.add('qualification__active')
 
-        tab.forEach(tab =>{
-            tab.classList.remove('qualification__active')
+        tabs.forEach(otherTab =>{
+            otherTab.classList.remove('qualification__active')
         })
-        tab.classList.add('qualification__active')
+        tabElement.classList.add('qualification__active')
     })
 })
+
 /*==================== SERVICES MODAL ====================*/
 
 
