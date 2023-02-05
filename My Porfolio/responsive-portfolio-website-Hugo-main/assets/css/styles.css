@@ -289,6 +289,11 @@ img {
   font-size:var(--big-font-size);
 }
 
+.home__name{
+  font-size:var(--big-font-size);
+  color: var(--first-color-alt);
+}
+
 .home__subtitle{
   font-size: var(--h3-font-size);
   color: var(--text-color);
