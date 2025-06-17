@@ -532,6 +532,21 @@ img {
 .skills__node{
   width: 40%;
 }
+.skills__linux{
+  width: 70%;
+}
+.skills__network{
+  width: 60%;
+}
+.skills__virt{
+  width: 60%;
+}
+.skills__docker{
+  width: 70%;
+}
+.skills__cicd{
+  width: 70%;
+}
 .skills__firebase{
   width: 40%;
 }
